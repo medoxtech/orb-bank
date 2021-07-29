@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-size: 62.5%;
+    background-image: linear-gradient(105deg, rgb(205, 81, 209), rgb(105, 1, 114));
+    color: aliceblue;
+}
+
+.titel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+}
