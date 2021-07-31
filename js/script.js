@@ -176,6 +176,31 @@ btnTransfer.addEventListener("click", function (e) {
 		updateUI(currentAccount);
 	}
 });
+
+btnClose.addEventListener("click", function (e) {
+	e.preventDefault();
+
+	const accountIndex = accounts.findIndex(
+		(acc) => acc.username === currentAccount.username
+	);
+
+	if (
+		currentAccount.username === inputCloseUsername.value &&
+		currentAccount.pin === Number(inputClosePin.value)
+	) {
+		accounts.splice(accountIndex, 1);
+		containerApp.style.opacity = 0;
+		labelWelcome.textContent = "Log in to get started";
+		inputCloseUsername.value = inputClosePin.value = "";
+	}
+});
+
+btnLoan.addEventListener('click', function(e){
+	e.preventDefault();
+
+	const amount = 
+})
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
